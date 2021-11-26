@@ -139,6 +139,66 @@
 		},
 		{
 			"type":1,
+			"title":"MySQL 5.7",
+			"description":"The most popular open-source database",
+			"categories":[
+				"database"
+			],
+			"platform":"linux",
+			"logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mysql.png",
+			"image":"mysql/mysql-server:5.7.36",
+			"env":[
+				{
+					"name":"MYSQL_ROOT_PASSWORD",
+					"label":"Root password"
+				},
+				{
+					"name":"MYSQL_ROOT_HOST",
+					"default":"%",
+					"preset":true
+				}
+			],
+			"ports":[
+				"3306/tcp"
+			],
+			"volumes":[
+				{
+					"container":"/var/lib/mysql"
+				}
+			]
+		},
+		{
+			"type":1,
+			"title":"MySQL 8.0",
+			"description":"The most popular open-source database",
+			"categories":[
+				"database"
+			],
+			"platform":"linux",
+			"logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mysql.png",
+			"image":"mysql/mysql-server:8.0.26",
+			"env":[
+				{
+					"name":"MYSQL_ROOT_PASSWORD",
+					"label":"Root password"
+				},
+				{
+					"name":"MYSQL_ROOT_HOST",
+					"default":"%",
+					"preset":true
+				}
+			],
+			"ports":[
+				"3306/tcp"
+			],
+			"volumes":[
+				{
+					"container":"/var/lib/mysql"
+				}
+			]
+		},
+		{
+			"type":1,
 			"title":"MariaDB",
 			"description":"Performance beyond MySQL",
 			"categories":[
