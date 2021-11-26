@@ -116,7 +116,7 @@
 			],
 			"platform":"linux",
 			"logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mysql.png",
-			"image":"mysql/mysql-server:5.7",
+			"image":"mysql/mysql-server:latest",
 			"env":[
 				{
 					"name":"MYSQL_ROOT_PASSWORD",
@@ -232,6 +232,122 @@
 			"platform":"linux",
 			"logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
 			"image":"postgres:latest",
+			"env":[
+				{
+					"name":"POSTGRES_USER",
+					"label":"Superuser"
+				},
+				{
+					"name":"POSTGRES_PASSWORD",
+					"label":"Superuser password"
+				}
+			],
+			"ports":[
+				"5432/tcp"
+			],
+			"volumes":[
+				{
+					"container":"/var/lib/postgresql/data"
+				}
+			]
+		},
+		{
+			"type":1,
+			"title":"PostgreSQL 14",
+			"description":"The most advanced open-source database",
+			"categories":[
+				"database"
+			],
+			"platform":"linux",
+			"logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
+			"image":"postgres:14.1",
+			"env":[
+				{
+					"name":"POSTGRES_USER",
+					"label":"Superuser"
+				},
+				{
+					"name":"POSTGRES_PASSWORD",
+					"label":"Superuser password"
+				}
+			],
+			"ports":[
+				"5432/tcp"
+			],
+			"volumes":[
+				{
+					"container":"/var/lib/postgresql/data"
+				}
+			]
+		},
+		{
+			"type":1,
+			"title":"PostgreSQL 13",
+			"description":"The most advanced open-source database",
+			"categories":[
+				"database"
+			],
+			"platform":"linux",
+			"logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
+			"image":"postgres:13.5",
+			"env":[
+				{
+					"name":"POSTGRES_USER",
+					"label":"Superuser"
+				},
+				{
+					"name":"POSTGRES_PASSWORD",
+					"label":"Superuser password"
+				}
+			],
+			"ports":[
+				"5432/tcp"
+			],
+			"volumes":[
+				{
+					"container":"/var/lib/postgresql/data"
+				}
+			]
+		},
+		{
+			"type":1,
+			"title":"PostgreSQL 12",
+			"description":"The most advanced open-source database",
+			"categories":[
+				"database"
+			],
+			"platform":"linux",
+			"logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
+			"image":"postgres:12.9",
+			"env":[
+				{
+					"name":"POSTGRES_USER",
+					"label":"Superuser"
+				},
+				{
+					"name":"POSTGRES_PASSWORD",
+					"label":"Superuser password"
+				}
+			],
+			"ports":[
+				"5432/tcp"
+			],
+			"volumes":[
+				{
+					"container":"/var/lib/postgresql/data"
+				}
+			]
+		},
+		{
+			"type":1,
+			"title":"PostgreSQL 11",
+			"description":"The most advanced open-source database",
+			"categories":[
+				"database"
+			],
+			"platform":"linux",
+			"logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
+			"image":"postgres:11.14",
 			"env":[
 				{
 					"name":"POSTGRES_USER",
